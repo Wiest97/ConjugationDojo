@@ -1,0 +1,35 @@
+﻿:root{
+    --card-bg-primary: rgb(245, 234, 245);
+    --light-purple: rgb(241, 109, 241);
+    --dark-purple: rgb(189, 22, 189);
+}
+.card{
+    background-color: white;
+}
+.navigationArrowsContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
+    grid-auto-rows: minmax(20px, auto);
+
+}
+.navigationArrowLeft:hover{
+    cursor: pointer;
+}
+.navigationArrowRight:hover{
+    cursor: pointer;
+}
+.navigationArrowLeft{
+    text-align: center;
+    border: dotted 2px black;
+    color: lightgrey;
+}
+
+.navigationArrowRight{
+    text-align: center;
+    border: dotted 2px black;
+    color: lightslategrey;
+}
+.no-bottom{
+    padding-bottom: none;
+}

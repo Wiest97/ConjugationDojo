@@ -1,0 +1,28 @@
+﻿:root{
+    --light-purple: rgb(241, 109, 241);
+    --dark-purple: rgb(189, 22, 189);
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.grid-header{
+    grid-column: 1/4;
+    grid-row: 1;
+}
+
+.menu-button{
+      font-size: large;
+      color: var(--dark-purple);
+      background-color: white;
+      border: 2px solid var(--light-purple);
+      border-radius: 5px;
+
+}
+h2{
+    text-align: center;
+    color: var(--dark-purple);
+}
