@@ -1,10 +1,40 @@
 /* Provide sufficient contrast against white background */
-a {
-  color: #0366d6;
+@font-face {
+    font-family: 'Nikkyou Sans';
+    src: local('Nikkyou Sans'), url(./fonts/NikkyouSans.ttf);
 }
 
-code {
-  color: #E01A76;
+:root{
+  --bg-color-primary: rgb(242, 233, 228);
+  --bg-color-accent: rgb(242, 223, 223);
+  --bg-color-dark: rgba(110, 0, 4, 0.91);
+
+  --text-color-primary: rgb(219, 44, 44);
+  --text-color-accent: rgb(219, 84, 72);
+
+}
+h1, h2, h3, h4{
+    font-family: 'Nikkyou Sans';
+}
+body{
+  background-color: var(--bg-color-primary);
+    font-family: "Droid Sans";
+    font-size: 12px;
+    font-weight: lighter;
+}
+body::-webkit-scrollbar{
+    width: .5em;
+}
+
+body::-webkit-scrollbar-track{
+    background: var(--bg-color-accent);
+}
+body::-webkit-scrollbar-thumb{
+    background: var(--text-color-accent);
+}
+
+.app-container{
+    margin-left: 6rem;
 }
 
 .btn-primary {

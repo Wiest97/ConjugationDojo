@@ -1,7 +1,7 @@
 ﻿:root{
     --card-bg-primary: rgb(245, 234, 245);
-    --light-purple: rgb(241, 109, 241);
-    --dark-purple: rgb(189, 22, 189);
+    --text-color-accent: rgb(241, 109, 241);
+    --text-color-primary: rgb(189, 22, 189);
 }
 .card{
     background-color: white;

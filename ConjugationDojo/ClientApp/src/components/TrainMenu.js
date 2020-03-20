@@ -1,5 +1,5 @@
 ﻿import React, { useState,  } from 'react'
-import './TrainMenu.css'
+import './styles/TrainMenu.css'
 
 export function TrainMenu() { 
     return (

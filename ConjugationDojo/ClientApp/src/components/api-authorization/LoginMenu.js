@@ -3,6 +3,9 @@ import { NavItem, NavLink } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import authService from './AuthorizeService';
 import { ApplicationPaths } from './ApiAuthorizationConstants';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import { faSignInAlt } from '@fortawesome/free-solid-svg-icons'
+import './../styles/NavMenu.css'
 
 export class LoginMenu extends Component {
     constructor(props) {
@@ -46,11 +49,12 @@ export class LoginMenu extends Component {
 
     authenticatedView(userName, profilePath, logoutPath) {
         return (<Fragment>
-            <NavItem>
-                <NavLink tag={Link} className="text-dark" to={profilePath}>Hello {userName}</NavLink>
+            <NavItem className="nav-item">
+                <NavLink tag={Link} className="nav-link" to={profilePath}>Hello {userName}</NavLink>
             </NavItem>
-            <NavItem>
-                <NavLink tag={Link} className="text-dark" to={logoutPath}>Logout</NavLink>
+            <NavItem classname="nav-item">
+                <NavLink tag={Link} className="nav-link" to={logoutPath}>Logout</NavLink>
+
             </NavItem>
         </Fragment>);
 
@@ -59,10 +63,10 @@ export class LoginMenu extends Component {
     anonymousView(registerPath, loginPath) {
         return (<Fragment>
             <NavItem>
-                <NavLink tag={Link} className="text-dark" to={registerPath}>Register</NavLink>
+                <NavLink tag={Link} className="nav-link" to={registerPath}>Register</NavLink>
             </NavItem>
             <NavItem>
-                <NavLink tag={Link} className="text-dark" to={loginPath}>Login</NavLink>
+                <NavLink tag={Link} className="nav-link" to={loginPath}>Login</NavLink>
             </NavItem>
         </Fragment>);
     }
